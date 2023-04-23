@@ -1,6 +1,6 @@
 const express = require('express'); //inyeccion de la dependencia express
 const mongoose = require('mongoose'); //inyeccion de la dependencia mongoose
-const personsRoute = require('./routes/person'); //incluimos el router que viene de persons
+const personsRoute = require('./routes/persons'); //incluimos el router que viene de persons
 require('dotenv').config(); //Inyectamos la variable de ambiente
 
 mongoose.Promise = global.Promise;

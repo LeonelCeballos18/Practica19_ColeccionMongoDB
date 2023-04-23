@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
 let PersonSchema = new mongoose.Schema({  //Creamos la estrutura de nuestro schema
-    nombre: String,
-    edad: Number,
-    tipoSangre: String,
-    nss: String
+    name: String,
+    email: String,
+    password: String
 });
 
-module.exports = mongoose.model('Persons', PersonSchema); //exportamos el schema
+module.exports = mongoose.model('Users', PersonSchema); //exportamos el schema
